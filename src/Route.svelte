@@ -21,7 +21,7 @@
     const { props, ...others } = given;
 
     // prune all declared props from this component
-    required.forEach(k => {
+    Object.keys(required).forEach(k => {
       delete others[k];
     });
 
